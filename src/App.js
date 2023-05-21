@@ -4,15 +4,18 @@ import Hello from './page/Hello';
 
 
 
+
 const router = createBrowserRouter([
   {
-    path: '/',
+    index: true,
     element: <Landing />,
+    children: [
+      {
+        path: 'hello',
+        element: <Hello />,
+      }
+    ]
   },
-  {
-    path: 'hello',
-    element: <Hello />,
-  }
 ])
 
 
