@@ -5,9 +5,12 @@ import Hello from './page/Hello';
 
 export default function App() {
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Route exact path='/' component={<Landing />}/>
-        <Route path='/hello' component={<Hello />}/>
+    <div className="App">
+      <BrowserRouter basename={"/loocia1910.github.io"}>
+      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+          <Route exact path='/' component={<Landing />}/>
+          <Route path='/hello' component={<Hello />}/>
       </BrowserRouter>
+      </div>
   );
 }
